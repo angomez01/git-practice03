@@ -1,0 +1,56 @@
+site_name: Digital Accelerators Portal
+#site_url: https://gitlab.com/globetelecom/isg/solution-chapters/software-engineering-chapters/software-engineering/da-portal-mkdocs
+site_description: Digital Accelerators Portal
+
+repo_name: da-etl-container-python
+repo_url: https://gitlab.com/digital-accelerator/da-etl-container-python
+edit_uri: blob/develop/docs
+
+#repo_url: 'https://gitlab.com/project/repo'
+#edit_uri_template: '-/edit/feat/design/docs%2F{path!q}'
+
+theme:
+  name: material
+  font: 
+    text: Muli
+  icon:
+    repo: fontawesome/brands/gitlab
+  palette:
+
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to Dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to Light mode
+  features:
+    - content.code.copy
+    - content.action.edit
+    - content.action.view
+    - navigation.path
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
